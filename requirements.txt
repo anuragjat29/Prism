@@ -1,0 +1,110 @@
+# ==========================
+# Core LangChain Ecosystem
+# ==========================
+langchain
+langchain-core
+langchain-community
+langgraph
+
+# ==========================
+# LLM Providers
+# ==========================
+langchain-mistralai
+langchain-openai
+langchain-google-genai
+langchain-groq
+langchain-anthropic
+
+# ==========================
+# Search Tools
+# ==========================
+langchain-tavily
+tavily-python
+
+# ==========================
+# Embeddings
+# ==========================
+langchain-huggingface
+sentence-transformers
+
+# ==========================
+# Vector Databases
+# ==========================
+faiss-cpu
+chromadb
+
+# ==========================
+# Document Loaders
+# ==========================
+pypdf
+pymupdf
+unstructured
+python-docx
+
+# ==========================
+# Text Splitters
+# ==========================
+langchain-text-splitters
+
+# ==========================
+# Web Scraping
+# ==========================
+beautifulsoup4
+lxml
+html5lib
+
+# ==========================
+# HTTP Requests
+# ==========================
+requests
+httpx
+
+# ==========================
+# Environment Variables
+# ==========================
+python-dotenv
+
+# ==========================
+# Data Processing
+# ==========================
+pandas
+numpy
+
+# ==========================
+# Validation
+# ==========================
+pydantic
+
+# ==========================
+# API Framework
+# ==========================
+fastapi
+uvicorn
+
+# ==========================
+# Frontend
+# ==========================
+streamlit
+
+# ==========================
+# Logging & Terminal
+# ==========================
+rich
+tqdm
+
+# ==========================
+# Utilities
+# ==========================
+typing-extensions
+python-multipart
+
+# ==========================
+# Optional OCR
+# ==========================
+pytesseract
+Pillow
+
+# ==========================
+# Token Counting
+# ==========================
+tiktoken
