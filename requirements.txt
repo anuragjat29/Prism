@@ -109,3 +109,4 @@ Pillow
 # ==========================
 gunicorn
 tiktoken
+Flask
