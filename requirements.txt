@@ -107,4 +107,5 @@ Pillow
 # ==========================
 # Token Counting
 # ==========================
+gunicorn
 tiktoken
