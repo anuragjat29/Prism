@@ -109,4 +109,4 @@ Pillow
 # ==========================
 gunicorn
 tiktoken
-Flask
+Flaskflask-cors
