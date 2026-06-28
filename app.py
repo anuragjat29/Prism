@@ -9,8 +9,7 @@ if sys.platform.startswith("win"):
 
 from pipeline import run
 
-# Define static folder as frontend/dist
-app = Flask(__name__, static_folder='frontend/dist', static_url_path='')
+app = Flask(__name__)
 CORS(app)
 
 @app.route('/api/research', methods=['POST'])
@@ -25,13 +24,14 @@ def research():
     result = run(query)
     return jsonify({'result': result, 'intent': intent})
 
-# Serve frontend static files
+# Serve frontend static files explicitly to prevent route collision
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def serve(path):
-    if path != "" and os.path.exists(os.path.join(app.static_folder, path)):
-        return send_from_directory(app.static_folder, path)
-    return send_from_directory(app.static_folder, 'index.html')
+    static_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), 'frontend', 'dist'))
+    if path != "" and os.path.exists(os.path.join(static_dir, path)):
+        return send_from_directory(static_dir, path)
+    return send_from_directory(static_dir, 'index.html')
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
